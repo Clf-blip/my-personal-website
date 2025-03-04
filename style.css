@@ -1,0 +1,148 @@
+/* General Reset */
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Ensure Body Covers Full Page */
+body {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+
+    /* Apply the background image */
+    background-image: url('images/store-background.svg'); /* Ensure path is correct */
+    background-size: cover; /* Cover the full page */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* No repeating */
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #DC143C; /* Scarlet Red */
+    font-family: 'Brush Script MT', cursive; /* Flowery font */
+    text-align: center;
+    margin: 20px auto; /* Ensures it scrolls */
+}
+
+/* Hamburger Menu */
+.menu-icon {
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    display: flex;
+    flex-direction: column; /* Ensure bars stack vertically */
+    justify-content: space-around; /* Evenly space the bars */
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    position: fixed; /* Keep it static */
+    top: 15px;
+    left: 15px;
+    z-index: 1000;
+    padding: 5px; /* Prevent overlap */
+}
+
+/* The three lines inside the menu */
+.menu-icon div {
+    width: 25px;
+    height: 3px;
+    background-color: white; /* Ensure bars are visible */
+    margin: 3px 0; /* Space out the lines */
+    transition: all 0.3s ease-in-out; /* Smooth animation */
+}
+
+/* Navigation Menu */
+.nav-links {
+    position: absolute;
+    top: 60px;
+    left: 15px;
+    width: 200px;
+    background: black;
+    display: none;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Show menu when active */
+.nav-links.active {
+    display: flex;
+}
+
+/* Navigation Links */
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.nav-links a:hover {
+    color: blue;
+    border: 2px solid pink;
+    border-radius: 3px;
+}
+
+/* Ensure Content Spreads Fully */
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px; /* Prevent overlap */
+}
+
+
+/* About Page Styling */
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('images/store-background.svg'); /* Reuse background */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.about-text h2 {
+    font-size: 28px;
+    color: #DC143C;
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+
